@@ -13,9 +13,51 @@
         rel="stylesheet">
     <title>To Do List Application</title>
 </head>
-    
-<body>
 
+<body>
+    <main class="container">
+        <section class="username">
+            <h2 class="username-title">
+                Welcome! <input type="text" id="username" placeholder="Insert username here">
+            </h2>
+        </section>
+        <section class="todo-create">
+            <h2 class="create-title">Create task</h2>
+            <form class="create-form">
+                <h3>to do list here</h3>
+                <input type="text" id="task" name="task" placeholder="e.g make a task">
+                <div class="todo-category">
+                    <h4>Pick a category</h4>
+                    <div class="">
+                        <input type="radio" name="task-category" id="work" value="work">
+                        <label for="work">Work</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" name="task-category" id="personal" value="personal">
+                        <label for="personal">Personal</label>
+                    </div>
+                </div>
+                <input type="submit" value="Add Task">
+            </form>
+        </section>
+
+        <section class="todo-list">
+             <h2>Task List</h2>
+             <div class="todo-list-container">
+                <input type="checkbox" name="list" id="">
+                <input type="text" placeholder="item1" readonly>
+                <button>Edit</button>
+                <button>Delete</button>
+             </div>
+             <div class="todo-list-container">
+                <input type="checkbox" name="list" id="">
+                <input type="text" placeholder="item1" readonly>
+                <button>Edit</button>
+                <button>Delete</button>
+             </div>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
